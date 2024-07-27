@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Plan</title>
+</head>
+<body>
+    <h1>Your Workout and Meal Plan</h1>
+    <h2>Workout Plan</h2>
+    <ul>
+        <% workoutPlan.forEach(workout => { %>
+            <li><%= workout.name %> - <%= workout.type %></li>
+        <% }) %>
+    </ul>
+    <h2>Meal Plan</h2>
+    <ul>
+        <% mealPlan.forEach(meal => { %>
+            <li><%= meal.title %> - <%= meal.calories %> calories</li>
+        <% }) %>
+    </ul>
+</body>
+</html>
