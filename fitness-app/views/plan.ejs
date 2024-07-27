@@ -4,14 +4,15 @@
     <title>Your Plan</title>
 </head>
 <body>
-    <h1>Your Workout and Meal Plan</h1>
-    <h2>Workout Plan</h2>
+    <h1>Fit Budd id here to help you get your fit body!</h1>
+    <h2>Your Workout and Meal Plan</h2>
+    <h3>Workout Plan</h3>
     <ul>
         <% workoutPlan.forEach(workout => { %>
             <li><%= workout.name %> - <%= workout.type %></li>
         <% }) %>
     </ul>
-    <h2>Meal Plan</h2>
+    <h3>Meal Plan</h3>
     <ul>
         <% mealPlan.forEach(meal => { %>
             <li><%= meal.title %> - <%= meal.calories %> calories</li>

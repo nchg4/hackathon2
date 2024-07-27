@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fitness App</title>
+    <title>Fit Buddy</title>
 </head>
 <body>
-    <h1>Get Your Workout and Meal Plan</h1>
+    <h1>Fit Buddy</h1>
     <form action="/plan" method="post">
         <label for="name">Name:</label>
         <input type="text" id="username" name="username" required><br>
@@ -17,13 +17,19 @@
         <select name="heightUnit">
             <option value="cm">cm</option>
             <option value="ft">ft</option>
-        </select>
+        </select><br>
         <label for="weight">Weight:</label>
         <input type="number" name="weight" id="weight" min="1">
         <select name="weightUnit">
             <option value="cm">kg</option>
             <option value="ft">lbs</option>
-        </select>
+        </select><br>
+        <label>Gender:</label>
+        <select name="weightUnit">
+            <option></option>
+            <option>Male</option>
+            <option>Female</option>
+        </select><br>
         <button type="submit">Submit</button>
     </form>
 </body>
