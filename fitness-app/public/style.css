@@ -1,0 +1,179 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    color: #2ecc71; /* Green color */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  /* Form Styles */
+  
+  form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #2ecc71; /* Green color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #29b260;
+  }
+  
+  /* Plan Page Styles */
+  
+  .plan-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .plan-page h2 {
+    margin-top: 20px;
+  }
+  
+  .plan-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .plan-page li {
+    margin-bottom: 10px;
+  }
+  
+  .plan-page li::before {
+    content: "\2022";
+    font-weight: bold;
+    color: #2ecc71; /* Green color */
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    /* Tablet and mobile styles */
+    form {
+      max-width: 300px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    input[type="text"], input[type="email"], input[type="number"] {
+      height: 30px;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+  
+    select {
+      height: 30px;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+  
+    button[type="submit"] {
+      height: 30px;
+      padding: 5px;
+    }
+  
+    .plan-page {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Mobile styles */
+    form {
+      max-width: 250px;
+      margin: 10px auto;
+      padding: 5px;
+    }
+  
+    input[type="text"], input[type="email"], input[type="number"] {
+      height: 25px;
+      margin-bottom: 5px;
+      padding: 2px;
+    }
+  
+    select {
+      height: 25px;
+      margin-bottom: 5px;
+      padding: 2px;
+    }
+  
+    button[type="submit"] {
+      height: 25px;
+      padding: 2px;
+    }
+  
+    .plan-page {
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 5px;
+    }
+  }
