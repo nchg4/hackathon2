@@ -2,21 +2,36 @@
 <html>
 <head>
     <title>Your Plan</title>
-    <link rel="stylesheet" href="/style.css"></head>
+    <link rel="stylesheet" href="/style.css">
+</head>
 <body>
-    <h1>Fit Buddy is here to help you get your fit body!</h1>
-    <h2>Your Workout and Meal Plan</h2>
-    <h3>Workout Plan</h3>
-    <ul>
-        <% workoutPlan.forEach(workout => { %>
-            <li><%= workout.name %> - <%= workout.type %></li>
-        <% }) %>
-    </ul>
-    <h3>Meal Plan</h3>
-    <ul>
-        <% mealPlan.forEach(meal => { %>
-            <li><%= meal.title %> - <%= meal.calories %> calories</li>
-        <% }) %>
-    </ul>
+    <center>
+        <h1 id="planh1">Fit Buddy is here to help you get your fit body!</h1>
+        <button id="logoutButton">Logout</button>
+        <h2>Here is your 10 day Workout and Meal Plan</h2>
+        <div class="plan-container">
+            <div class="workout-plan">
+                <h3>Workout Plan</h3>
+                <ul>
+                    <% workoutPlan.forEach(workout => { %>
+                        <ul><%= workout.name %> - <%= workout.type %></ul>
+                    <% }) %>
+                </ul>
+            </div>
+            <div class="meal-plan">
+                <h3>Meal Plan</h3>
+                <ul>
+                    <% mealPlan.forEach(meal => { %>
+                        <ul><%= meal.title %> - <%= meal.calories %> calories</ul>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </center>
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            window.location.href = '/';
+        });
+    </script>
 </body>
 </html>
